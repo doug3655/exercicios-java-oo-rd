@@ -20,8 +20,22 @@ public class Fibonacci {
      * @return int[]
      */
     public int[] getSequenciaFibonacciDe(int tamanho) {
-        // TODO: implemente o código deste método
-        return null;
+        if(tamanho<=0){
+            int[] lista = null;
+            return lista;
+        }
+        int[] lista = new int[tamanho];
+        lista[0]=1;
+        if(tamanho==1){
+            return lista;
+        }
+        lista[1]=2;
+        if (tamanho==2){
+            return lista;
+        }
+        for (int i=2;i<tamanho;i++){
+            lista[i]=lista[i-1]+lista[i-2];
+        }
+        return lista;
     }
-
 }

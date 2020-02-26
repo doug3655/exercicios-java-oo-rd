@@ -1,5 +1,6 @@
 package exercicio01;
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -19,8 +20,27 @@ public class NumeroPrimo {
      * @return Set<Integer>
      */
     public Set<Integer> getNumerosPrimosDe(Set<Integer> numeros) {
-        // TODO: implemente o código deste método
-        return null;
+        Set<Integer> primos = new HashSet<>();
+        primos.add(1);
+        if (numeros.size()==1){
+            return primos;
+        }
+        if(numeros.size()==2){
+            primos.add(2);
+            return primos;
+        }
+        for (Integer i: numeros) {
+            boolean teste=true;
+            for (int j=2;j<i;j++){
+                if (i%j==0){
+                    teste=false;
+                    break;
+                }
+            }
+            if (teste){
+                primos.add(i);
+            }
+        }
+        return primos;
     }
-
 }

@@ -1,5 +1,6 @@
 package exercicio01;
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -27,7 +28,10 @@ public class Exercicio01 {
      * @return Set<Integer>
      */
     private static Set<Integer> getSetDe(int[] numeros) {
-        // TODO: implemente o código deste método
-        return null;
+        Set<Integer> interios = new HashSet<>();
+        for(int i=0;i<numeros.length;i++){
+            interios.add(numeros[i]);
+        }
+        return interios;
     }
 }

@@ -8,17 +8,16 @@ import java.util.Map;
 public class Exercicio03 {
 
     public static void main(String[] args) {
-
-        Map<String, Double> map = null;
+        /*Map<String, Double> map = null;
         // TODO: implemente a criação do Map com a política de descontos do Site da empresa
 
         List<Produto> produtos = getProdutosCadastradosNoSite(map);
 
         imprimeListaDeProdutosDoSite(produtos);
 
-    }
+    }*/
 
-    private static List<Produto> getProdutosCadastradosNoSite(Map<String, Double> map) {
+   /* private static List<Produto> getProdutosCadastradosNoSite(Map<String, Double> map) {
 
         List<Produto> produtos = new ArrayList<>();
 
@@ -72,6 +71,6 @@ public class Exercicio03 {
             System.out.println(produto.getId()+"|"+produto.getNome()+": Preço de Venda DE "+produto.getPreco()+ " POR "+produto.getPrecoPromocao());
         }
     }
+*/
 
-
-}
+}}
